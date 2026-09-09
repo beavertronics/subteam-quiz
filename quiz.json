@@ -1,0 +1,42 @@
+{
+  "resultOptions": [
+    {"id": "programming", "label": "Programming"},
+    {"id": "mechanical", "label": "Mechanical"},
+    {"id": "electrical", "label": "Electrical"},
+    {"id": "marketing", "label": "Marketing"},
+    {"id": "cad", "label": "CAD/Design"},
+    {"id": "cnc", "label": "CNC"}
+  ],
+  "questions": [
+    {
+      "id": "q1",
+      "question": "QUESTION_PLACEHOLDER_1",
+      "image": "IMAGE_PLACEHOLDER_1",
+      "answers": [
+        {"id": "q1-a", "label": "ANSWER_PLACEHOLDER_1", "image": "IMAGE_PLACEHOLDER_1", "weights": {"programming": 2, "mechanical": 1, "electrical": 1, "marketing": 0, "cad": 2, "cnc": 1}},
+        {"id": "q1-b", "label": "ANSWER_PLACEHOLDER_2", "image": "IMAGE_PLACEHOLDER_2", "weights": {"programming": 1, "mechanical": 2, "electrical": 2, "marketing": 1, "cad": 1, "cnc": 2}},
+        {"id": "q1-c", "label": "ANSWER_PLACEHOLDER_3", "image": "IMAGE_PLACEHOLDER_3", "weights": {"programming": 0, "mechanical": 1, "electrical": 1, "marketing": 3, "cad": 1, "cnc": 0}}
+      ]
+    },
+    {
+      "id": "q2",
+      "question": "QUESTION_PLACEHOLDER_2",
+      "image": "IMAGE_PLACEHOLDER_2",
+      "answers": [
+        {"id": "q2-a", "label": "ANSWER_PLACEHOLDER_4", "image": "IMAGE_PLACEHOLDER_4", "weights": {"programming": 1, "mechanical": 2, "electrical": 1, "marketing": 0, "cad": 3, "cnc": 1}},
+        {"id": "q2-b", "label": "ANSWER_PLACEHOLDER_5", "image": "IMAGE_PLACEHOLDER_5", "weights": {"programming": 3, "mechanical": 1, "electrical": 2, "marketing": 0, "cad": 1, "cnc": 0}},
+        {"id": "q2-c", "label": "ANSWER_PLACEHOLDER_6", "image": "IMAGE_PLACEHOLDER_6", "weights": {"programming": 0, "mechanical": 1, "electrical": 1, "marketing": 2, "cad": 2, "cnc": 1}}
+      ]
+    },
+    {
+      "id": "q3",
+      "question": "QUESTION_PLACEHOLDER_3",
+      "image": "IMAGE_PLACEHOLDER_3",
+      "answers": [
+        {"id": "q3-a", "label": "ANSWER_PLACEHOLDER_7", "image": "IMAGE_PLACEHOLDER_7", "weights": {"programming": 2, "mechanical": 1, "electrical": 2, "marketing": 0, "cad": 1, "cnc": 1}},
+        {"id": "q3-b", "label": "ANSWER_PLACEHOLDER_8", "image": "IMAGE_PLACEHOLDER_8", "weights": {"programming": 1, "mechanical": 3, "electrical": 1, "marketing": 0, "cad": 2, "cnc": 2}},
+        {"id": "q3-c", "label": "ANSWER_PLACEHOLDER_9", "image": "IMAGE_PLACEHOLDER_9", "weights": {"programming": 0, "mechanical": 1, "electrical": 1, "marketing": 3, "cad": 1, "cnc": 0}}
+      ]
+    }
+  ]
+}
