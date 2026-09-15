@@ -1,11 +1,11 @@
 {
   "resultOptions": [
-    {"id": "programming", "label": "Programming", "description": "programmers program PLACEHOLDER", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
-    {"id": "mechanical", "label": "Mechanical", "description": "mechanical does mech things idk PLACEHOLDER", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
-    {"id": "electrical", "label": "Electrical", "description": "electrical does electricaling PLACEHOLDER", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
-    {"id": "marketing", "label": "Marketing", "description": "marketing does marketing PLACEHOLDER", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
-    {"id": "cad", "label": "CAD/Design", "description": "CAD does CAD PLACEHOLDER", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
-    {"id": "cnc", "label": "CNC", "description": "CNC does CNC PLACEHOLDER", "image": "https://team5970.org/assets/unused/expired-ravioli.png"}
+    {"id": "programming", "label": "Programming", "description": "Programmers write code in Kotlin to control and make robots drive and do things. They also develop our website, using a mix of JS, CSS, and HTML! Programming is usually the final step in the robot design process.", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
+    {"id": "mechanical", "label": "Mechanical", "description": "Mechanical works with the CNC and CAD sub-teams to make parts and put them together to create a fully working robot. They mount motors, attach mechanisms, etc! Mechanical passes the robot off to the Electrical and Programming sub-teams once they are done.", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
+    {"id": "electrical", "label": "Electrical", "description": "Electrical does all of the wiring between motors, sensors, and the brain of the robot to make it work and drive. Electrical and mechanical work together to make a driving robot. Can't have a driving robot without both of them!", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
+    {"id": "marketing", "label": "Marketing", "description": "Marketing creates promotional material on our social media, and in other forms such as posters or flyers. They also network with other teams and faculty to advertise the team. They lead fundraising, which involves getting grants and sponsorships from companies. Marketing creates pins with custom designs, which we give out at competitions to other robotics teams!", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
+    {"id": "cad", "label": "CAD/Design", "description": "CAD (Computer Aided Design) creates a detailed 3D model of our robot and the different subsystems on it. They design everything before the physical robot parts start getting made. We use Onshape to design our robots.", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
+    {"id": "cnc", "label": "CNC", "description": "CNC (Computer Numerical Control) uses a machine to cut metal and make precisely manufactured parts. We use Fusion 360 to convert our CAD designs of the robot into parts we can machine. Some parts are machines by hand by the mechanical sub-team, while other parts that need to be precise are machined with a CNC.", "image": "https://team5970.org/assets/unused/expired-ravioli.png"}
   ],
   "questions": [
     {
