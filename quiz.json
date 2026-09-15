@@ -1,17 +1,17 @@
 {
   "resultOptions": [
-    {"id": "programming", "label": "Programming"},
-    {"id": "mechanical", "label": "Mechanical"},
-    {"id": "electrical", "label": "Electrical"},
-    {"id": "marketing", "label": "Marketing"},
-    {"id": "cad", "label": "CAD/Design"},
-    {"id": "cnc", "label": "CNC"}
+    {"id": "programming", "label": "Programming", "description": "programmers program PLACEHOLDER", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
+    {"id": "mechanical", "label": "Mechanical", "description": "mechanical does mech things idk PLACEHOLDER", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
+    {"id": "electrical", "label": "Electrical", "description": "electrical does electricaling PLACEHOLDER", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
+    {"id": "marketing", "label": "Marketing", "description": "marketing does marketing PLACEHOLDER", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
+    {"id": "cad", "label": "CAD/Design", "description": "CAD does CAD PLACEHOLDER", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
+    {"id": "cnc", "label": "CNC", "description": "CNC does CNC PLACEHOLDER", "image": "https://team5970.org/assets/unused/expired-ravioli.png"}
   ],
   "questions": [
     {
       "id": "q1",
       "question": "QUESTION_PLACEHOLDER_1",
-      "image": "IMAGE_PLACEHOLDER_1",
+      "image": "https://team5970.org/assets/unused/expired-ravioli.png",
       "answers": [
         {"id": "q1-a", "label": "ANSWER_PLACEHOLDER_1", "image": "IMAGE_PLACEHOLDER_1", "weights": {"programming": 2, "mechanical": 1, "electrical": 1, "marketing": 0, "cad": 2, "cnc": 1}},
         {"id": "q1-b", "label": "ANSWER_PLACEHOLDER_2", "image": "IMAGE_PLACEHOLDER_2", "weights": {"programming": 1, "mechanical": 2, "electrical": 2, "marketing": 1, "cad": 1, "cnc": 2}},

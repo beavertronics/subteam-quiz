@@ -1,0 +1,274 @@
+/* variables */
+:root {
+    --bg-color: hwb(0 10% 90%);
+    --card-bg: hwb(0 18% 82%);
+    --text-main: white;
+    --text-muted: lightgrey;
+    --btn-bg: hwb(34 8% 17%);
+    --btn-border: #515151;
+    --btn-hover-bg: orange;
+    --btn-hover-border: #eabc66ff;
+    --accent-glow: rgba(255, 195, 60, 0.25);
+    --border-radius: 0.75rem;
+}
+
+/* placeholder text input styling */
+::placeholder {
+    color: var(--text-muted);
+    opacity: 1;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inter, system-ui, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.5;
+    padding: 2rem 1rem;
+}
+
+/* container layout stuff */
+.quiz-container {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.quiz-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.quiz-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+.quiz-header p {
+    color: var(--text-muted);
+    font-size: 1rem;
+}
+
+/* question cards */
+.question-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--btn-border);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-bottom: 1.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.question-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
+    color: var(--text-main);
+}
+
+/* options container */
+.options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+/* option buttons styling */
+.option-btn {
+    background-color: var(--btn-bg);
+    color: var(--text-main);
+    border: 1px solid var(--btn-border);
+    border-radius: 8px;
+    padding: 0.85rem 1.25rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    outline: none;
+}
+
+/* hover/focus states */
+.option-btn:hover {
+    background-color: var(--btn-hover-bg);
+    border-color: var(--btn-hover-border);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--accent-glow);
+}
+
+.option-btn:focus-visible {
+    border-color: var(--btn-hover-border);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.option-btn:active {
+    transform: translateY(0);
+}
+
+/* question image display */
+.question-image {
+    width: 100%;
+    max-height: 260px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--btn-border);
+}
+
+/* selected option */
+.option-btn.selected {
+    background-color: var(--btn-hover-bg);
+    border-color: var(--btn-hover-border);
+    box-shadow: 0 4px 12px var(--accent-glow);
+    font-weight: 600; /* slight weight bump, for reference, 500 is "normal" and 700 is "bold"*/
+}
+
+/* make other options less colorful when one option is selected */
+.options-grid:has(.selected) .option-btn:not(.selected) {
+    opacity: 0.45;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--text-muted);
+    border-color: rgba(255, 255, 255, 0.08);
+    box-shadow: none;
+    transform: none;
+}
+
+/* increase opacity of unselected options on hover */
+.options-grid:has(.selected) .option-btn:not(.selected):hover {
+    opacity: 0.75;
+}
+
+/* submit/next button */
+.submit-btn {
+    margin-top: 1.5rem;
+    width: 100%;
+    background-color: var(--btn-hover-bg);
+    color: var(--text-main);
+    border: 1px solid var(--btn-hover-border);
+    border-radius: 8px;
+    padding: 0.85rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-btn:hover:not(:disabled) {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.submit-btn:disabled {
+    background-color: var(--btn-bg);
+    color: var(--text-muted);
+    border-color: var(--btn-border);
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* results and collapsible subteam styling */
+.top-result {
+    background-color: #dfa825;
+    border: 1px solid var(--btn-hover-border);
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.result-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.result-details {
+    background-color: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    overflow: hidden;
+}
+
+.result-summary {
+    padding: 0.85rem 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: var(--text-main);
+}
+
+.result-summary:hover {
+    background-color: var(--btn-hover-bg);
+}
+
+.details-content {
+    padding: 1rem 1.25rem;
+    border-top: 1px solid var(--btn-border);
+}
+
+.result-desc {
+    color: var(--text-main);
+    font-size: 0.95rem;
+}
+
+/* email form styling */
+.email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.email-label {
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-main);
+}
+
+.email-input {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: var(--text-main);
+    border: 1px solid var(--btn-border);
+    border-radius: 8px;
+    padding: 0.85rem 1.25rem;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.email-input:focus {
+    border-color: var(--btn-hover-border);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+.email-feedback {
+    color: lightyellow;
+    font-size: 0.9rem;
+}
+
+/* action row for back + next/submit/finish buttons */
+.action-row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* back button margin modifier */
+.back-btn {
+    margin-right: 0.5rem;
+}
+
+/* make buttons share spare in the action row */
+.action-row .submit-btn {
+    width: auto;
+    flex: 1 1 0;
+}
+
+/* modifier to remove the default top margin on submit buttons used inside compact layouts */
+.submit-btn.no-top {
+    margin-top: 0;
+}
