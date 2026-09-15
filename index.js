@@ -69,7 +69,7 @@ function createSubmitButton({ text = 'Submit', type = 'button', onClick = null, 
 }
 
 function showQuestion(index) {
-    const container = document.getElementById('questions-wrapper');
+    const container = document.getElementById('questions');
     if (!container) return;
     if (!quizData) return;
 
