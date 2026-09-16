@@ -228,7 +228,12 @@ function showEmailPrompt(container) {
         // hello here is your email thingy
         // do something with this wonderful global variable idk
         console.log('Email:', userEmail);
-
+        let myFile = new Blob([userEmail], {type: 'text/plain'})
+        let url = window.URL.createObjectURL(myFile)
+        let linkElem = document.createElement('a')
+        linkElem.href = url
+        linkElem.download = 'email.txt'
+        linkElem.click()
         showResults(container);
     });
 
