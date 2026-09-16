@@ -2,6 +2,7 @@ let currentQuestionIndex = 0;
 let quizData = null;
 const selectedAnswers = {}; // stores selected answer per question
 let userEmail = null; // stores the user's email
+const imageCache = new Map();
 
 function showLoadError(container) {
     if (!container) return;
@@ -21,6 +22,35 @@ function showLoadError(container) {
     container.appendChild(card);
 }
 
+function preloadQuestionImages(questions) {
+    const imageUrls = [...new Set(
+        questions
+            .map(question => question.image)
+            .filter(Boolean)
+            .filter(image => !String(image).includes('PLACEHOLDER'))
+    )];
+
+    return Promise.allSettled(
+        imageUrls.map((src) => {
+            if (imageCache.has(src)) {
+                return imageCache.get(src);
+            }
+
+            const imageLoadPromise = new Promise((resolve, reject) => {
+                const img = new Image();
+                img.loading = 'eager';
+                img.decoding = 'async';
+                img.onload = () => resolve(img);
+                img.onerror = () => reject(new Error(`Failed to preload image: ${src}`));
+                img.src = src;
+            });
+
+            imageCache.set(src, imageLoadPromise);
+            return imageLoadPromise;
+        })
+    );
+}
+
 async function loadQuizData() {
     const container = document.getElementById('questions');
 
@@ -35,7 +65,8 @@ async function loadQuizData() {
         }
 
         quizData = data;
-        showQuestion(currentQuestionIndex); // show the first question after loading
+        await preloadQuestionImages(data.questions);
+        showQuestion(currentQuestionIndex); // show the first question after all images are ready
         return quizData;
 
     } catch (error) {
