@@ -1,41 +1,501 @@
 {
   "resultOptions": [
-    {"id": "programming", "label": "Programming", "description": "Programmers write code in Kotlin to control and make the robot drive and do things. They also develop our website, using a mix of JS, CSS, and HTML! Programming is usually the final step in the robot design process.", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
-    {"id": "mechanical", "label": "Mechanical", "description": "Mechanical works with the CNC and CAD sub-teams to make parts and put them together to create a fully working robot. They mount motors, attach mechanisms, etc! Mechanical passes the robot off to the Electrical and Programming sub-teams once they are done.", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
-    {"id": "electrical", "label": "Electrical", "description": "Electrical does all of the wiring between motors, sensors, and the brain of the robot to make it work and drive. Electrical and Mechanical work together to make a driving robot. Can't have a driving robot without Electrical!", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
-    {"id": "marketing", "label": "Marketing", "description": "Marketing creates promotional material on our social media, and in other forms such as posters or flyers. They also network with other teams and faculty to advertise the team. They lead fundraising, which involves getting grants and sponsorships from companies. Marketing also creates pins with custom designs, which we give out at competitions to other robotics teams!", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
-    {"id": "cad", "label": "CAD/Design", "description": "CAD (Computer Aided Design) creates a detailed 3D model of our robot and the different subsystems on it. They design everything before the physical robot parts start getting made. We use Onshape to design our robots.", "image": "https://team5970.org/assets/unused/expired-ravioli.png"},
-    {"id": "cnc", "label": "CNC", "description": "CNC (Computer Numerical Control) uses a machine to cut metal or polycarbonate and make precisely manufactured parts. We use Fusion 360 to convert our CAD designs of the robot into parts we can machine. Some parts are machines by hand by the mechanical sub-team, while other parts that need to be precise are machined with a CNC.", "image": "https://team5970.org/assets/unused/expired-ravioli.png"}
+    {
+      "id": "programming",
+      "label": "Programming",
+      "description": "Programmers write code in Kotlin to control and make the robot drive and do things. They also develop our website, using a mix of JS, CSS, and HTML! Programming is usually the final step in the robot design process.",
+      "image": "https://team5970.org/assets/unused/expired-ravioli.png"
+    },
+    {
+      "id": "mechanical",
+      "label": "Mechanical",
+      "description": "Mechanical works with the CNC and CAD sub-teams to make parts and put them together to create a fully working robot. They mount motors, attach mechanisms, etc! Mechanical passes the robot off to the Electrical and Programming sub-teams once they are done.",
+      "image": "https://team5970.org/assets/unused/expired-ravioli.png"
+    },
+    {
+      "id": "electrical",
+      "label": "Electrical",
+      "description": "Electrical does all of the wiring between motors, sensors, and the brain of the robot to make it work and drive. Electrical and Mechanical work together to make a driving robot. Can't have a driving robot without Electrical!",
+      "image": "https://team5970.org/assets/unused/expired-ravioli.png"
+    },
+    {
+      "id": "marketing",
+      "label": "Marketing",
+      "description": "Marketing creates promotional material on our social media, and in other forms such as posters or flyers. They also network with other teams and faculty to advertise the team. They lead fundraising, which involves getting grants and sponsorships from companies. Marketing also creates pins with custom designs, which we give out at competitions to other robotics teams!",
+      "image": "https://team5970.org/assets/unused/expired-ravioli.png"
+    },
+    {
+      "id": "cad",
+      "label": "CAD/Design",
+      "description": "CAD (Computer-Aided Design) creates a detailed 3D model of our robot and the different subsystems on it. They design everything before the physical robot parts start getting made. We use Onshape to design our robots.",
+      "image": "https://team5970.org/assets/unused/expired-ravioli.png"
+    },
+    {
+      "id": "cnc",
+      "label": "CNC",
+      "description": "CNC (Computer Numerical Control) uses a machine to cut metal or polycarbonate and make precisely manufactured parts. We use Fusion 360 to convert our CAD designs of the robot into parts we can machine. Some parts are machines by hand by the mechanical sub-team, while other parts that need to be precise are machined with a CNC.",
+      "image": "https://team5970.org/assets/unused/expired-ravioli.png"
+    }
   ],
   "questions": [
     {
       "id": "q1",
-      "question": "QUESTION_PLACEHOLDER_1",
-      "image": "https://team5970.org/assets/unused/expired-ravioli.png",
+      "question": "Are you interested in having contact with the robot?",
+      "image": "https://cdn.arstechnica.net/wp-content/uploads/2015/04/robot-phone.jpg",
       "answers": [
-        {"id": "q1-a", "label": "ANSWER_PLACEHOLDER_1", "image": "IMAGE_PLACEHOLDER_1", "weights": {"programming": 2, "mechanical": 1, "electrical": 1, "marketing": 0, "cad": 2, "cnc": 1}},
-        {"id": "q1-b", "label": "ANSWER_PLACEHOLDER_2", "image": "IMAGE_PLACEHOLDER_2", "weights": {"programming": 1, "mechanical": 2, "electrical": 2, "marketing": 1, "cad": 1, "cnc": 2}},
-        {"id": "q1-c", "label": "ANSWER_PLACEHOLDER_3", "image": "IMAGE_PLACEHOLDER_3", "weights": {"programming": 0, "mechanical": 1, "electrical": 1, "marketing": 3, "cad": 1, "cnc": 0}}
+        {
+          "id": "q1-a",
+          "label": "I wanna hug it",
+          "image": "IMAGE_PLACEHOLDER_1",
+          "weights": {
+            "programming": 0,
+            "mechanical": 3,
+            "electrical": 3,
+            "marketing": 0,
+            "cad": 0,
+            "cnc": 2
+          }
+        },
+        {
+          "id": "q1-b",
+          "label": "I hold no love for my child",
+          "image": "IMAGE_PLACEHOLDER_2",
+          "weights": {
+            "programming": 2,
+            "mechanical": 0,
+            "electrical": 0,
+            "marketing": 2,
+            "cad": 2,
+            "cnc": 1
+          }
+        },
+        {
+          "id": "q1-c",
+          "label": "I'll share custody on weekends only",
+          "image": "IMAGE_PLACEHOLDER_3",
+          "weights": {
+            "programming": 0,
+            "mechanical": 1,
+            "electrical": 1,
+            "marketing": 3,
+            "cad": 1,
+            "cnc": 0
+          }
+        }
       ]
     },
     {
       "id": "q2",
-      "question": "QUESTION_PLACEHOLDER_2",
-      "image": "IMAGE_PLACEHOLDER_2",
+      "question": "Do you art goodly?",
+      "image": "https://copicmarkertutorials.com/wp-content/uploads/2015/09/is-my-art-good-enough-to-sell-copic-tiger.jpg",
       "answers": [
-        {"id": "q2-a", "label": "ANSWER_PLACEHOLDER_4", "image": "IMAGE_PLACEHOLDER_4", "weights": {"programming": 1, "mechanical": 2, "electrical": 1, "marketing": 0, "cad": 3, "cnc": 1}},
-        {"id": "q2-b", "label": "ANSWER_PLACEHOLDER_5", "image": "IMAGE_PLACEHOLDER_5", "weights": {"programming": 3, "mechanical": 1, "electrical": 2, "marketing": 0, "cad": 1, "cnc": 0}},
-        {"id": "q2-c", "label": "ANSWER_PLACEHOLDER_6", "image": "IMAGE_PLACEHOLDER_6", "weights": {"programming": 0, "mechanical": 1, "electrical": 1, "marketing": 2, "cad": 2, "cnc": 1}}
+        {
+          "id": "q2-a",
+          "label": "Let me show you my portfolio",
+          "image": "IMAGE_PLACEHOLDER_4",
+          "weights": {
+            "programming": 0,
+            "mechanical": 1,
+            "electrical": 1,
+            "marketing": 2,
+            "cad": 2,
+            "cnc": 0
+          }
+        },
+        {
+          "id": "q2-b",
+          "label": "my art peaks at stickmen",
+          "image": "IMAGE_PLACEHOLDER_5",
+          "weights": {
+            "programming": 3,
+            "mechanical": 1,
+            "electrical": 1,
+            "marketing": 0,
+            "cad": 0,
+            "cnc": 1
+          }
+        },
+        {
+          "id": "q2-c",
+          "label": "Like ig bro",
+          "image": "IMAGE_PLACEHOLDER_6",
+          "weights": {
+            "programming": 0,
+            "mechanical": 1,
+            "electrical": 1,
+            "marketing": 2,
+            "cad": 2,
+            "cnc": 1
+          }
+        }
       ]
     },
     {
       "id": "q3",
-      "question": "QUESTION_PLACEHOLDER_3",
+      "question": "Do computers like you?",
+      "image": "https://t4.ftcdn.net/jpg/02/99/29/75/360_F_299297527_BHXhBsPqpf6a5PD5v2FDQLsyZO2097AB.jpg",
+      "answers": [
+        {
+          "id": "q3-a",
+          "label": "they propose to me on the daily",
+          "image": "IMAGE_PLACEHOLDER_7",
+          "weights": {
+            "programming": 3,
+            "mechanical": 0,
+            "electrical": 0,
+            "marketing": 0,
+            "cad": 2,
+            "cnc": 2
+          }
+        },
+        {
+          "id": "q3-b",
+          "label": "they crash when I walk by",
+          "image": "IMAGE_PLACEHOLDER_8",
+          "weights": {
+            "programming": 0,
+            "mechanical": 2,
+            "electrical": 2,
+            "marketing": 2,
+            "cad": 0,
+            "cnc": 0
+          }
+        },
+        {
+          "id": "q3-c",
+          "label": "They Run.",
+          "image": "IMAGE_PLACEHOLDER_9",
+          "weights": {
+            "programming": 1,
+            "mechanical": 0,
+            "electrical": 0,
+            "marketing": 1,
+            "cad": 1,
+            "cnc": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q4",
+      "question": "How do you feel about making things?",
+      "image": "https://cdn.magicmeme.com/templates/cmon-do-something.jpg",
+      "answers": [
+        {
+          "id": "q4-a",
+          "label": "Call me bob the builder 🗣️",
+          "image": "IMAGE_PLACEHOLDER_10",
+          "weights": {
+            "programming": 2,
+            "mechanical": 2,
+            "electrical": 2,
+            "marketing": 0,
+            "cad": 2,
+            "cnc": 3
+          }
+        },
+        {
+          "id": "q4-b",
+          "label": "Idk man that sounds like a lot of work",
+          "image": "IMAGE_PLACEHOLDER_11",
+          "weights": {
+            "programming": 1,
+            "mechanical": 0,
+            "electrical": 1,
+            "marketing": 3,
+            "cad": 0,
+            "cnc": 0
+          }
+        },
+        {
+          "id": "q4-c",
+          "label": "If I can break them after",
+          "image": "IMAGE_PLACEHOLDER_12",
+          "weights": {
+            "programming": 0,
+            "mechanical": 2,
+            "electrical": 0,
+            "marketing": 3,
+            "cad": 0,
+            "cnc": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "q5",
+      "question": "Are you the GOAT??",
+      "image": "https://t3.ftcdn.net/jpg/00/42/39/02/360_F_42390200_wHXFQW9dkKq7s3BihMoa5UcirKVZ1iKo.jpg",
+      "answers": [
+        {
+          "id": "q5-a",
+          "label": "baaaaaa",
+          "image": "IMAGE_PLACEHOLDER_13",
+          "weights": {
+            "programming": 2,
+            "mechanical": 1,
+            "electrical": 4,
+            "marketing": 0,
+            "cad": 2,
+            "cnc": 1
+          }
+        },
+        {
+          "id": "q5-b",
+          "label": "If this is about wires, I eat those",
+          "image": "IMAGE_PLACEHOLDER_14",
+          "weights": {
+            "programming": 1,
+            "mechanical": 3,
+            "electrical": 1,
+            "marketing": 0,
+            "cad": 2,
+            "cnc": 2
+          }
+        },
+        {
+          "id": "q5-c",
+          "label": "I will only do electrical if you need it (we do)",
+          "image": "IMAGE_PLACEHOLDER_15",
+          "weights": {
+            "programming": 0,
+            "mechanical": 0,
+            "electrical": 4,
+            "marketing": 0,
+            "cad": 0,
+            "cnc": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "q6",
+      "question": "Can you talk to people?",
+      "image": "https://img.magnific.com/free-vector/hand-drawn-flat-people-talking_23-2149051163.jpg?semt=ais_hybrid&w=740&q=80",
+      "answers": [
+        {
+          "id": "q6-a",
+          "label": "To the extent it's annoying",
+          "image": "IMAGE_PLACEHOLDER_13",
+          "weights": {
+            "programming": 0,
+            "mechanical": 3,
+            "electrical": 2,
+            "marketing": 3,
+            "cad": 0,
+            "cnc": 0
+          }
+        },
+        {
+          "id": "q6-b",
+          "label": "I'm doing this instead of talking to the people at the stand, what do you think?",
+          "image": "IMAGE_PLACEHOLDER_14",
+          "weights": {
+            "programming": 1,
+            "mechanical": 0,
+            "electrical": 0,
+            "marketing": 0,
+            "cad": 1,
+            "cnc": 3
+          }
+        },
+        {
+          "id": "q6-c",
+          "label": "I avoid it, but yes",
+          "image": "IMAGE_PLACEHOLDER_15",
+          "weights": {
+            "programming": 0,
+            "mechanical": 2,
+            "electrical": 1,
+            "marketing": 0,
+            "cad": 1,
+            "cnc": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q7",
+      "question": "How's your engineering?",
       "image": "IMAGE_PLACEHOLDER_3",
       "answers": [
-        {"id": "q3-a", "label": "ANSWER_PLACEHOLDER_7", "image": "IMAGE_PLACEHOLDER_7", "weights": {"programming": 2, "mechanical": 1, "electrical": 2, "marketing": 0, "cad": 1, "cnc": 1}},
-        {"id": "q3-b", "label": "ANSWER_PLACEHOLDER_8", "image": "IMAGE_PLACEHOLDER_8", "weights": {"programming": 1, "mechanical": 3, "electrical": 1, "marketing": 0, "cad": 2, "cnc": 2}},
-        {"id": "q3-c", "label": "ANSWER_PLACEHOLDER_9", "image": "IMAGE_PLACEHOLDER_9", "weights": {"programming": 0, "mechanical": 1, "electrical": 1, "marketing": 3, "cad": 1, "cnc": 0}}
+        {
+          "id": "q7-a",
+          "label": "My everything",
+          "image": "IMAGE_PLACEHOLDER_13",
+          "weights": {
+            "programming": 0,
+            "mechanical": 3,
+            "electrical": 1,
+            "marketing": 0,
+            "cad": 2,
+            "cnc": 0
+          }
+        },
+        {
+          "id": "q7-b",
+          "label": "Maybe in TF2?",
+          "image": "IMAGE_PLACEHOLDER_14",
+          "weights": {
+            "programming": 2,
+            "mechanical": 1,
+            "electrical": 0,
+            "marketing": 2,
+            "cad": 1,
+            "cnc": 0
+          }
+        },
+        {
+          "id": "q7-c",
+          "label": "never speak its name",
+          "image": "IMAGE_PLACEHOLDER_15",
+          "weights": {
+            "programming": 2,
+            "mechanical": 0,
+            "electrical": 0,
+            "marketing": 3,
+            "cad": 0,
+            "cnc": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q8",
+      "question": "Do you wanna be locked in a room for all eternity?",
+      "image": "https://t3.ftcdn.net/jpg/00/55/67/14/360_F_55671452_FHRjT1VxswDnCebufAcQVEdAwtggVAaa.jpg",
+      "answers": [
+        {
+          "id": "q8-a",
+          "label": "ASAP.",
+          "image": "IMAGE_PLACEHOLDER_13",
+          "weights": {
+            "programming": 2,
+            "mechanical": 0,
+            "electrical": 0,
+            "marketing": 0,
+            "cad": 2,
+            "cnc": 3
+          }
+        },
+        {
+          "id": "q8-b",
+          "label": "I need to photosynthesis",
+          "image": "IMAGE_PLACEHOLDER_14",
+          "weights": {
+            "programming": 0,
+            "mechanical": 3,
+            "electrical": 2,
+            "marketing": 2,
+            "cad": 0,
+            "cnc": 0
+          }
+        },
+        {
+          "id": "q8-c",
+          "label": "how is this related to robots",
+          "image": "IMAGE_PLACEHOLDER_15",
+          "weights": {
+            "programming": 0,
+            "mechanical": 1,
+            "electrical": 1,
+            "marketing": 3,
+            "cad": 1,
+            "cnc": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "q9",
+      "question": "Can you code?",
+      "image": "https://i.guim.co.uk/img/media/d059b58efe8ce50d15639f76448becdeec69bc9b/0_184_7200_4320/master/7200.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=cdb5298773baf69c080a77c757fd6c08",
+      "answers": [
+        {
+          "id": "q9-a",
+          "label": "i speak in binary",
+          "image": "IMAGE_PLACEHOLDER_13",
+          "weights": {
+            "programming": 3,
+            "mechanical": 0,
+            "electrical": 0,
+            "marketing": 0,
+            "cad": 0,
+            "cnc": 1
+          }
+        },
+        {
+          "id": "q9-b",
+          "label": "nop",
+          "image": "IMAGE_PLACEHOLDER_14",
+          "weights": {
+            "programming": 0,
+            "mechanical": 1,
+            "electrical": 0,
+            "marketing": 1,
+            "cad": 0,
+            "cnc": 0
+          }
+        },
+        {
+          "id": "q9-c",
+          "label": "Knows how to code sorta kinda maybe",
+          "image": "IMAGE_PLACEHOLDER_15",
+          "weights": {
+            "programming": 2,
+            "mechanical": 0,
+            "electrical": 1,
+            "marketing": 0,
+            "cad": 0,
+            "cnc": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "q10",
+      "question": "The robot EXPLODED",
+      "image": "IMAGE_PLACEHOLDER_3",
+      "answers": [
+        {
+          "id": "q10-a",
+          "label": "Call me Shop M.D.",
+          "image": "IMAGE_PLACEHOLDER_13",
+          "weights": {
+            "programming": 0,
+            "mechanical": 2,
+            "electrical": 1,
+            "marketing": 0,
+            "cad": 0,
+            "cnc": 0
+          }
+        },
+        {
+          "id": "q10-b",
+          "label": "Dang I hope someone else fixes it",
+          "image": "IMAGE_PLACEHOLDER_14",
+          "weights": {
+            "programming": 3,
+            "mechanical": 0,
+            "electrical": 0,
+            "marketing": 2,
+            "cad": 0,
+            "cnc": 1
+          }
+        },
+        {
+          "id": "q10-c",
+          "label": "im here for morale support",
+          "image": "IMAGE_PLACEHOLDER_15",
+          "weights": {
+            "programming": 1,
+            "mechanical": 0,
+            "electrical": 0,
+            "marketing": 3,
+            "cad": 0,
+            "cnc": 0
+          }
+        }
       ]
     }
   ]
